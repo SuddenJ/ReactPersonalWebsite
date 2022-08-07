@@ -5,9 +5,11 @@ import {
   Route,
 } from "react-router-dom";
 import App from "./App";
-import Expenses from "./routes/expenses";
+import ReadMeAboutSite from "./routes/readMe";
 import Invoices from "./routes/invoices";
 import Invoice from './routes/invoice';
+import CryptoPriceApi from "./routes/cryptoPriceApi";
+
 import './index.css';
 
 const root = ReactDOM.createRoot(
@@ -16,11 +18,16 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route path="expenses" element={<Expenses />} />
-        <Route path="invoices" element={<Invoices />}>
-          <Route path=":invoiceId" element={<Invoice />} />
-        </Route>
+        <Route path="/" element={<App />}>
+
+        <Route path="readMe" element={<ReadMeAboutSite />} />
+        <Route path="cryptoPriceApi" element={<CryptoPriceApi />} /> 
+        
+        /* Be carful, put new page lings above this If you want this invoice / invoices link they go together*/
+        <Route path="invoices" element={<Invoices />} >
+        <Route path=":invoiceId" element={<Invoice />} />
+        
+    </Route>
         <Route
           path="*"
           element={
