@@ -18,16 +18,16 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     <Routes>
-        <Route path="/" element={<App />}>
+      <Route path="/" element={<App />}>
 
         <Route path="readMe" element={<ReadMeAboutSite />} />
         <Route path="cryptoPriceApi" element={<CryptoPriceApi />} /> 
         
         /* Be carful, put new page lings above this If you want this invoice / invoices link they go together*/
         <Route path="invoices" element={<Invoices />} >
-        <Route path=":invoiceId" element={<Invoice />} />
+          <Route path=":invoiceId" element={<Invoice />} />
+        </Route>
         
-    </Route>
         <Route
           path="*"
           element={
