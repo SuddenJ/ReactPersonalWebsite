@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
+      <Route path="/ReactPersonalWebsite" element={<App />}>
 
         <Route path="cryptoPriceApi" element={<CryptoPriceApi />} /> 
         

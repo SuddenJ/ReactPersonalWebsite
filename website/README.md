@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm run deploy`
+Runs the predeploy and deploy scripts in the package.json
+Commits build files to gh-pages branch in ReactPersonal website repo and can access website here: 
+
 ### `npm start`
 
 Runs the app in the development mode.\

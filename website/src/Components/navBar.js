@@ -16,7 +16,7 @@ function NavBar() {
         <div className='rightSide'>
         {/* <Link to="/invoices">Invoices</Link> |{" "} */}
         <a href="https://joshreadmeaboutsite.blogspot.com/">Read Me about creating this site</a> |{" "}
-        <Link to="/cryptoPriceApi">Crypto Price Api</Link>
+        <Link to="cryptoPriceApi">Crypto Price Api</Link>
         </div>
       
     </div>
